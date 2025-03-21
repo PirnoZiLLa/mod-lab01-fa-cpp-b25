@@ -41,8 +41,7 @@ unsigned int faStr2(const char* str) {
             isInsideWord = true;
             startsWithCapital = (*str >= 'A' && *str <= 'Z');
             isAllLowercase = true;
-        }
-        else if (*str != ' ' && isInsideWord) {
+        }else if (*str != ' ' && isInsideWord) {
             if (!(*str >= 'a' && *str <= 'z')) {
                 isAllLowercase = false;
             }
